@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.container{
+    width: 400px;
+}
+
+h1{
+    
+    font-weight: lighter;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+/* FORM */
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+
+form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+form button{
+    width: 100px;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+form button:hover{
+    opacity: 0.8;
+}
+
+.filter{
+    width: 100%;
+}
+
+.filter input{
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid;
+    padding: 10px;
+    color: grey;
+    background-color: transparent;
+}
+
+
+
+
+
+
+/* LİSTE */
+ul{
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul button{
+    border: 0px;
+    background-color: transparent;
+}
+
+ul img{
+    height: 10px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+
+
+
+.clear{
+    width: 100%;
+    border: 1px solid grey;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.clear:hover{
+    opacity: 0.8;
+}
+
+
+
+
+@media (max-width:500px){
+    ul{
+        grid-template: 1fr 1fr 1fr;
+    }
+}
